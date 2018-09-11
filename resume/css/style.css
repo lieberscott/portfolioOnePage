@@ -1,0 +1,129 @@
+hr {
+  border-color: #ABB2B9;
+  width: 100%;
+}
+
+.bootstrap {
+  vertical-align: top;
+}
+
+.bottom {
+  font-size: 11px;
+}
+
+.desc { /* Top description: Full-stack developer */
+  font-size: 18px;
+  font-style: italic;
+  margin-top: -10px;
+}
+
+.experienceDate { /* Dates for both Experience and Education (just used one classname) */
+  float: right;
+}
+
+.experienceDesc, .projectDesc { /* Small font in descriptions for Experience and Projects */
+  color: #273746;
+  font-size: 13px;
+}
+
+.educationName, .experienceEmployer, .projectTitle { /* Top level titles in Education, Experience, and Projects sections */
+  font-size: 20px;
+}
+
+.experienceTitle, .projectRole { /* Second level sub-heads in Experience and Projects sections */
+  color: #17202A;
+  font-size: 15px;
+}
+
+.experienceTop, .educationTop { /* Wrapper around title and subhead in Experience and Education sections */
+  display: inline-block;
+}
+
+.frameworks { /* Text of Frameworks section */
+  display: inline;
+  text-align: center;
+}
+
+.glitch {
+  padding-bottom: 6px;
+  width: 17px;
+}
+
+.media { /* Free Code Camp, Glitch, etc., links at top of document */
+  display: block;
+}
+
+.name {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.nameanddesc { /* Wrapper around name and title at top of document */
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+}
+
+.navbar {
+  background-color: white;
+  font-family: 'Nunito', sans-serif;
+  min-width: 215px;
+}
+
+.nav-item {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section { /* Each horizontal section, e.g. Experience, Projects, etc. */
+  display: block;
+  margin: 30px 0;
+}
+
+.sectionBlock { /* used for the three-column blocks such as in the Frameworks section */
+  display: inline-block;
+  width: 24%;
+}
+
+.sectionProjects, .sectionEducations, .sectionExperiences, .sectionText { /* all education sections in one block */
+  display: inline-block;
+  width: 74%;
+}
+
+.sectionHead { /* Category as listed on the left, e.g. Experience, Projects, etc. */
+  display: inline-block;
+  font-size: 24px;
+  font-style: italic;
+  margin-right: 5%;
+  vertical-align: top;
+  width: 20%;
+}
+
+.topRight { /* Wrapper around the top right content at top of document */
+  display: inline-block;
+  padding-top: 16px;
+}
+
+.topRight a {
+  margin: 0 8px;
+}
+
+
+#main { /* Entire document not including navbar */
+  background: whitesmoke;
+  border-top: 3px solid #383838;
+  border-bottom: 3px solid #383838;
+  font-family: 'Lora', serif;
+  margin: 80px auto 30px auto;
+  padding: 50px;
+  width: 965px;
+}
+
+#main a {
+  text-decoration: underline;
+}
+
+#main a:link, #main a:visited, #main a:hover, #main a:active {
+  color: #641E16;
+}

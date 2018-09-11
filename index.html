@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scott Lieber Home</title>
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Nunito:300,400">
+  <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/d3636bb4-c5c2-49c7-9980-9c2a93cc4899%2FScreen%20Shot%202018-08-26%20at%206.48.22%20pm.png?1535323730257">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-faded fixed-top">
+      <a class="navbar-brand" href="/">Scott Lieber</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./resume">Resumé</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="main">
+  
+    <div class="center">
+      <div class="name">
+        Scott Lieber
+      </div>
+      <div class="skills">
+        HTML | CSS | Bootstrap | SASS | JavaScript | jQuery | D3.js <br/> MongoDB | Express.js | React | Node.js | Pug | ES6
+      </div>
+    </div>
+
+  <div class="container container-fluid">
+    <div id="portfolio">
+      <div class="title">
+        Portfolio
+      </div>
+      <div class="tab">
+        <button class="tablinks active" onclick="openPort(event, 'fullstack')">Fullstack</button>
+        <button class="tablinks" onclick="openPort(event, 'react')">React</button>
+        <button class="tablinks" onclick="openPort(event, 'd3')">D3.js</button>
+        <button class="tablinks" onclick="openPort(event, 'microservices')">Microservices</button>
+        <button class="tablinks" onclick="openPort(event, 'front')">Front End</button>
+      </div>
+
+      <div id="fullstack" class="tabcontent"> <!-- Beginning of fullstack tab -->
+
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'voting')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/votingmachine1.png" />
+            <div class="text-center">Voting Machine</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'nightlife')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/nightlife1.png" />
+            <div class="text-center">Nightlife Coordination App</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'stocks')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/stocks.png" />
+            <div class="text-center">Stock Checker</div>
+          </div>
+        </div>
+
+        <div id="voting" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/votingmachine1.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>Voting Machine</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/VotingAppReact" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://voting-machine.glitch.me/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: As an authenticated user, I can share my polls with my friends.</li>
+                  <li>User Story: As an unauthenticated or authenticated user, I can see and vote on everyone's polls.</li>
+                  <li>User Story: As an authenticated user, if I don't like the options on a poll, I can create a new option.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express, React, React Router, Redux, JSON Web Tokens, MongoDB, Mongoose, Twitter authentication
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="nightlife" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/nightlife1.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>Nightlife Coordination App</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/nightlife" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://nighttime.glitch.me/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: As an authenticated user, I can add myself to a bar to indicate I am going there tonight.</li>
+                  <li>User Story: As an authenticated user, I can remove myself from a bar if I no longer want to go there.</li>
+                  <li>User Story: As an unauthenticated user, when I login I should not have to search again.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express, React, React Router, Reactstrap, Pug, MongoDB, Twitter authentication
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="stocks" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/stocks.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>Stock Checker</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/Viewstocks" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://viewstocks.glitch.me/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can add new stocks by their symbol name.</li>
+                  <li>User Story: I can remove stocks.</li>
+                  <li>User Story: I can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express, MongoDB, Pug, Socket.io
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- End of fullstack tab -->
+
+      <div id="react" class="tabcontent"> <!-- Beginning of React tab -->
+        
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'life')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/02/gameoflife1.jpg" />
+            <div class="text-center">Game of Life</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'dungeon')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/dungeoncrawlerstill.jpg" />
+            <div class="text-center">Dungeoncrawler Game</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'recipe')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/recipestill.jpg" />
+            <div class="text-center">Recipe Box</div>
+          </div>
+        </div>
+
+        <div id="life" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/02/gameoflife1.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Game of Life</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/GameOfLife" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/GameOfLife/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can start and stop the board, set up the board, and clear the board.</li>
+                  <li>User Story: When I press start, the game will play out.</li>
+                  <li>User Story: Each time the board changes, I can see how many generations have gone by.</li>
+                </ul>
+                <b>Built with: </b>React, Redux
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="dungeon" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/dungeoncrawlerstill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Dungeoncrawler Game</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/Dungeoncrawler" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/Dungeoncrawler/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: All the items and enemies on the map are arranged at random.</li>
+                  <li>User Story: Much of the map is hidden. When I take a step, all spaces that are within a certain number of spaces from me are revealed.</li>
+                  <li>User Story: When I fight an enemy, we take turns damaging each other until one of us loses. I do damage based off of my level and my weapon. The enemy does damage based off of its level. Damage is somewhat random within a range.</li>
+                </ul>
+                <b>Built with: </b>React, Redux, jQuery
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="recipe" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/recipestill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Voting Machine</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/RecipeBox" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/RecipeBox/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can create recipes that have names and ingredients.</li>
+                  <li>User Story: I can edit and delete these recipes.</li>
+                  <li>User Story: All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there.</li>
+                </ul>
+                <b>Built with: </b>React, Redux, Reactstrap
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of React tab -->
+
+      <div id="d3" class="tabcontent"> <!-- Beginning of D3 tab -->
+        
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'educ')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/educ.jpg" />
+            <div class="text-center">Chrolopleth Map</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'temp')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/temp.jpg" />
+            <div class="text-center">Heat Map</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'gdp')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/gdp.jpg" />
+            <div class="text-center">Bar Chart</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'cycling')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/dopingstill.jpg" />
+            <div class="text-center">Scatterplot Graph</div>
+          </div>
+        </div>
+
+        <div id="educ" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/educ.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Choropleth Map</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/Educationmap" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/Educationmap/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: There should be at least 4 different fill colors used for the counties.</li>
+                  <li>User Story: The counties should have data-fips and data-education values that match the sample data.</li>
+                  <li>User Story: I can mouse over an area and see a tooltip which displays more information about the area.</li>
+                </ul>
+                <b>Built with: </b>D3.js
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="temp" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/temp.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Heat Map</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/TemperatureMap" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/TemperatureMap/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: My heat map should have rect elements that represent the data.</li>
+                  <li>User Story: There should be at least 4 different fill colors used for the cells.</li>
+                  <li>User Story: I can mouse over an area and see a tooltip which displays more information about the area.</li>
+                </ul>
+                <b>Built with: </b>D3.js
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="gdp" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/04/gdp.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Bar Chart</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/GDPgraph" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/GDPgraph/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: My chart should have a rect element for each data point displaying the data.</li>
+                  <li>User Story: Each bar element's height should accurately represent the data's corresponding GDP.</li>
+                  <li>User Story: I can mouse over an area and see a tooltip which displays more information about the area.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="cycling" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/dopingstill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Scatterplot Graph</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/Cycling" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/Cycling/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can see dots which represent the data being plotted.</li>
+                  <li>User Story: I can mouse over an area and see a tooltip which displays more information about the area.</li>
+                </ul>
+                <b>Built with: </b>D3.js
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of D3 tab -->
+
+      <div id="microservices" class="tabcontent"> <!-- Beginning of Micro Services tab -->
+        
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'header')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/headerparser.png" />
+            <div class="text-center">Header Parser Microservice</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'issuetracker')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/issuetracker.png" />
+            <div class="text-center">Issues Tracker</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'shortener')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/shortener.png" />
+            <div class="text-center">URL Shortener</div>
+          </div>
+        </div>
+
+        <div id="header" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/headerparser.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>Header Parser Microservice</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/headerparser" targer="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://fcc-headerinfo.glitch.me/" targer="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User story: I can get the IP address, preferred languages (from header Accept-Language) and system infos (from header User-Agent) for my device.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="issuetracker" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/issuetracker.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>Issue Tracker</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/fcc-issuestracker" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://fcc-issuetracker.glitch.me/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can POST /api/issues/{projectname} with form data containing required issue_title, issue_text, created_by, and optional assigned_to and status_text.</li>
+                  <li>User Story: I can PUT /api/issues/{projectname} with a _id and any fields in the object with a value to object said object. Returned will be 'successfully updated' or 'could not update'.</li>
+                  <li>User Story: I can DELETE /api/issues/{projectname} with a _id to completely delete an issue.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="shortener" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/shortener.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>URL Shortener</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/urlshortener" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://fcc-urlshorten.glitch.me/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON response.</li>
+                  <li>User Story: When I visit the shortened URL, it will redirect me to my original link.</li>
+                </ul>
+                <b>Built with: </b>Node.js, Express
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of Micro Services tab -->
+
+      <div id="front" class="tabcontent"> <!-- Beginning of Front End tab -->
+        
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'simon')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/02/simon2.jpg" />
+            <div class="text-center">Simon Game</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'quote')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/quotestill.jpg" />
+            <div class="text-center">Random Quote Machine</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'pomodoro')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/pomodorostill.jpg" />
+            <div class="text-center">Pomodoro Clock</div>
+          </div>
+          <div class="col-md-3" onclick="openDetail(event, 'greene')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/greenestill.jpg" />
+            <div class="text-center">Dedication Page</div>
+          </div>
+        </div>
+
+        <div id="simon" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/02/simon2.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Simon Game</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/SimonGame" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/SimonGame/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.</li>
+                  <li>User Story: I can see how many steps are in the current series of button presses.</li>
+                  <li>User Story: I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.</li>
+                </ul>
+                <b>Built with: </b>JavaScript, Web Audio API
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="quote" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/quotestill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Random Quote Machine</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/randomquote" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/randomquote/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: On first load, my quote machine displays a random quote.</li>
+                  <li>User Story: When a button is clicked, my quote machine should fetch a new quote.</li>
+                  <li>User Story: I can tweet the current quote.</li>
+                </ul>
+                <b>Built with: </b>JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="pomodoro" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/pomodorostill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Pomodoro Clock</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/PomodoroClock" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/PomodoroClock/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I should not be able to set a session or break length to less than 0.</li>
+                  <li>User Story: If the timer is paused and I click restart, the countdown should resume running from the point at which it was paused.</li>
+                  <li>User Story:  When a session/break reaches zero, a new session/break countdown should begin.</li>
+                </ul>
+                <b>Built with: </b>JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="greene" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/05/greenestill.jpg" />
+            </div>
+            <div class="col-md-6">
+              <h2>Dedication Page</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/lieberscott/greene" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="https://lieberscott.github.io/greene/" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithubpages.png?1536705756785" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>User Story: I should see an element which contains textual content describing the subject of the tribute page.</li>
+                  <li>User Story: I should see an element which links to an outside site that contains additional information about the subject.</li>
+                </ul>
+                <b>Built with: </b>HTML, CSS
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of Front End tab -->
+
+    </div>
+    
+    <div id="contact">
+      
+    <div class="title">
+      Contact
+    </div>
+    
+    <div class="leftcontainer">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSc29-Y-S5F-Aa4yxg9sS0Sb-8Mw-YEKwLyUwOHUl_i3eNiTeg/formResponse" method="post">
+        <div class="form-group">
+          <input type="text" name="entry.360649168" class="form-control" placeholder="Name" rows="1"/>
+        </div>
+      <div class="form-group">
+        <input type="email" name="entry.1971029172" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <textarea name="entry.627904617" class="form-control" id="exampleTextarea" placeholder="Message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+
+    <div class="github">
+      <a href="https://github.com/lieberscott" target="_blank">
+        <i class="fa fa-5x fa-github"></i>
+      </a>
+    </div>
+  </div>
+    
+  </div>
+
+
+
+
+<footer>
+  Coded and designed by Scott Lieber Copyright 2018
+
+</footer>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
