@@ -1,0 +1,270 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  padding-top: 60px;
+}
+
+footer {
+  background-color: white;
+  min-width: 270px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.bigimage {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.center {
+  background: url(https://scottlieber.files.wordpress.com/2018/04/statehouseblue.jpg) no-repeat center center;
+  display: flex;
+  flex-flow: column;
+  height: 570px;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin-top: 50px;
+  text-align: center; 
+}
+
+.col-xs-6 {
+  text-align: center;
+}
+
+.github {
+  display: inline-block;
+  font-size: 48px;
+  width: 300px;
+}
+
+.github a {
+  color: black;
+}
+
+.img-fluid {
+  border: 1px solid lightgray;
+}
+
+.leftcontainer {
+  display: inline-block;
+  width: 48%;
+}
+
+.logolink {
+  border: none;
+  max-height: 50px;
+}
+
+.name {
+  background: white;
+  font-size: 48px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  min-width: 215px;
+}
+
+.nav-item {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.phone {
+  font-size: 12px;
+}
+
+.picdiv {
+  position: absolute;
+  top: 169px;
+  right: 50%;
+  height: 456px;
+  overflow: hidden;
+  visibility: visible;
+  -webkit-animation: fadeleft 2s, slideleft 2s;
+}
+
+@-webkit-keyframes fadeleft {
+  0%{opacity:0;}
+  100%{opacity: 1;}
+}
+
+@-webkit-keyframes slideleft {
+  0%{right:55%;}
+  100%{right: 50%;}
+}
+
+.picimg {
+  height: 100%;
+  width: auto;
+}
+
+.skills {
+  background: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.subhead {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 30px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+.tabdetail {
+  display: none;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+.title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.userstories {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#contact {
+  margin: 100px 0;
+}
+
+#fullstack {
+  display: block;
+}
+
+/* #main {
+  min-width: 300px;
+  margin: 55px auto 30px auto;
+} */
+
+#portfolio {
+  margin: 100px 0;
+}
+
+
+@media(max-width: 800px) {
+
+  .actualtext {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .center {
+    width: auto;
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .info {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 270px;
+    height: auto;
+    -webkit-animation: none;
+  }
+
+  .media {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .media a {
+    margin: 0 30px;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .picdiv {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 90%;
+    max-width: 400px;
+    min-width: 270px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-animation: none;
+  }
+
+  .picimg {
+    height: auto;
+    width: 100%;
+  }
+
+  #main {
+    min-width: 300px;
+  }
+
+}
