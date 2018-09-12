@@ -15,7 +15,7 @@
 <body>
   <div>
     <nav class="navbar navbar-expand-sm navbar-light bg-faded fixed-top">
-      <a class="navbar-brand" href="/">Scott Lieber</a>
+      <a class="navbar-brand" href="/#">Scott Lieber</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,10 +25,10 @@
             <a class="nav-link" href="./resume">Resumé</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="/#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="/#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -45,18 +45,21 @@
         HTML | CSS | Bootstrap | SASS | JavaScript | jQuery | D3.js <br/> MongoDB | Express.js | React | Node.js | Pug | ES6
       </div>
     </div>
+    <hr />
 
   <div class="container container-fluid">
     <div id="portfolio">
       <div class="title">
         Portfolio
       </div>
+      <br />
       <div class="tab">
-        <button class="tablinks active" onclick="openPort(event, 'fullstack')">Fullstack</button>
+        <button class="tablinks active" onclick="openPort(event, 'fullstack')">Full Stack</button>
         <button class="tablinks" onclick="openPort(event, 'react')">React</button>
         <button class="tablinks" onclick="openPort(event, 'd3')">D3.js</button>
         <button class="tablinks" onclick="openPort(event, 'microservices')">Microservices</button>
         <button class="tablinks" onclick="openPort(event, 'front')">Front End</button>
+        <button class="tablinks" onclick="openPort(event, 'contributor')">Contributor</button>
       </div>
 
       <div id="fullstack" class="tabcontent"> <!-- Beginning of fullstack tab -->
@@ -466,12 +469,12 @@
               <br/>
               <div class="row">
                 <div class="col-6">
-                  <a href="https://github.com/lieberscott/headerparser" targer="_blank">
+                  <a href="https://github.com/lieberscott/headerparser" target="_blank">
                     <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
                   </a>
                 </div>
                 <div class="col-6">
-                  <a href="https://fcc-headerinfo.glitch.me/" targer="_blank">
+                  <a href="https://fcc-headerinfo.glitch.me/" target="_blank">
                     <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fglitch.png?1536695108280" />
                   </a>
                 </div>
@@ -509,10 +512,10 @@
               <div class="userstories">
                 <ul>
                   <li>User Story: I can POST /api/issues/{projectname} with form data containing required issue_title, issue_text, created_by, and optional assigned_to and status_text.</li>
-                  <li>User Story: I can PUT /api/issues/{projectname} with a _id and any fields in the object with a value to object said object. Returned will be 'successfully updated' or 'could not update'.</li>
+                  <li>User Story: I can PUT /api/issues/{projectname} with a _id and any fields in the object with a value to change said object. Returned will be 'successfully updated' or 'could not update'.</li>
                   <li>User Story: I can DELETE /api/issues/{projectname} with a _id to completely delete an issue.</li>
                 </ul>
-                <b>Built with: </b>Node.js, Express
+                <b>Built with: </b>Node.js, Express, MongoDB, Mongoose
               </div>
             </div>
           </div>
@@ -543,7 +546,7 @@
                   <li>User Story: I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON response.</li>
                   <li>User Story: When I visit the shortened URL, it will redirect me to my original link.</li>
                 </ul>
-                <b>Built with: </b>Node.js, Express
+                <b>Built with: </b>Node.js, Express, MongoDB, Mongoose
               </div>
             </div>
           </div>
@@ -700,46 +703,83 @@
         </div>
         
       </div> <!-- End of Front End tab -->
-
-    </div>
-    
-    <div id="contact">
       
-    <div class="title">
-      Contact
-    </div>
-    
-    <div class="leftcontainer">
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSc29-Y-S5F-Aa4yxg9sS0Sb-8Mw-YEKwLyUwOHUl_i3eNiTeg/formResponse" method="post">
-        <div class="form-group">
-          <input type="text" name="entry.360649168" class="form-control" placeholder="Name" rows="1"/>
+      <div id="contributor" class="tabcontent"> <!-- Beginning of Front End tab -->
+        
+        <div class="row">
+          <div class="col-md-3" onclick="openDetail(event, 'league')">
+            <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/leagueforgood.png" />
+            <div class="text-center">League For Good</div>
+          </div>
         </div>
-      <div class="form-group">
-        <input type="email" name="entry.1971029172" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <textarea name="entry.627904617" class="form-control" id="exampleTextarea" placeholder="Message" rows="4"></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark">Submit</button>
-      </form>
-    </div>
 
-    <div class="github">
-      <a href="https://github.com/lieberscott" target="_blank">
-        <i class="fa fa-5x fa-github"></i>
-      </a>
+        <div id="league" class="tabdetail">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="https://scottlieber.files.wordpress.com/2018/09/leagueforgood.png" />
+            </div>
+            <div class="col-md-6">
+              <h2>League For Good</h2>
+              <br/>
+              <div class="row">
+                <div class="col-6">
+                  <a href="https://github.com/freeCodeCamp/league-for-good" target="_blank">
+                    <img class="img-fluid logolink" src="https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fgithub.png?1536695202944" />
+                  </a>
+                </div>
+              </div>
+              <div class="userstories">
+                <ul>
+                  <li>Realized the onTapTouch() event was deprecated, breaking the functionality of the app, and updated the code.</li>
+                </ul>
+                <b>Built with: </b>React, Redux, React Router
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- End of Front End tab -->
+
     </div>
-  </div>
+    </div>
+    <hr />
     
-  </div>
+    <div class="container container-fluid">
+      <div id="contact">
 
+      <div class="title">
+        Contact
+      </div>
 
+      <div class="row">
+        <div class="col-md-6 leftcontainer">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSc29-Y-S5F-Aa4yxg9sS0Sb-8Mw-YEKwLyUwOHUl_i3eNiTeg/formResponse" method="post">
+            <div class="form-group">
+              <input type="text" name="entry.360649168" class="form-control" placeholder="Name" rows="1"/>
+            </div>
+          <div class="form-group">
+            <input type="email" name="entry.1971029172" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea name="entry.627904617" class="form-control" id="exampleTextarea" placeholder="Message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
 
+        <div class="col-md-6 github">
+          <a href="https://github.com/lieberscott" target="_blank">
+            <i class="fa fa-5x fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
 
-<footer>
-  Coded and designed by Scott Lieber Copyright 2018
+  <footer>
+    Coded and designed by Scott Lieber Copyright 2018
 
-</footer>
+  </footer>
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
