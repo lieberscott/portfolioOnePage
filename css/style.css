@@ -5,7 +5,6 @@ body {
 
 footer {
   background-color: white;
-  min-width: 270px;
   padding: 10px 0px;
   text-align: center;
 }
@@ -15,7 +14,7 @@ h2 {
 }
 
 hr {
-  border: 20px solid black;
+  border: 20px solid #22272b; /* btn-dark hover color */
   margin-top: 0px;
 }
 
@@ -28,7 +27,7 @@ hr {
 }
 
 .center {
-  background: url(https://scottlieber.files.wordpress.com/2018/04/statehouseblue.jpg) no-repeat center center;
+  background: url(https://cdn.glitch.com/ad9e8e64-f015-4a72-9b7e-cb5d88ecff1c%2Fchicago2.jpg?1536865118537) no-repeat center center;
   display: flex;
   flex-flow: column;
   height: 820px;
@@ -51,7 +50,11 @@ hr {
 }
 
 .github a {
-  color: black;
+  color: #333a40; /* btn-dark color */
+}
+
+.github a:hover {
+  color: #22272b; /* btn-dark hover color */
 }
 
 .img-fluid {
@@ -69,8 +72,9 @@ hr {
 }
 
 .name {
-  background: white;
-  font-size: 48px;
+  color: white;
+/*   background: white; */
+  font-size: 56px;
   letter-spacing: 3px;
   text-align: center;
 }
@@ -116,7 +120,8 @@ hr {
 }
 
 .skills {
-  background: white;
+  color: white;
+  /*   background: white; */
   font-size: 14px;
   text-align: center;
 }
@@ -199,11 +204,6 @@ hr {
 #fullstack {
   display: block;
 }
-
-/* #main {
-  min-width: 300px;
-  margin: 55px auto 30px auto;
-} */
 
 #portfolio {
   margin: 50px 0;
