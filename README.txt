@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/lieberscott/pen/BYVBGQ.
-
+One page portfolio created on Glitch
  
